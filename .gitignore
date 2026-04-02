@@ -1,0 +1,13 @@
+﻿# Środowisko wirtualne
+.venv/
+
+# Ustawienia IDE
+.idea/
+
+# Pliki tymczasowe
+__pycache__/
+*.pyc
+
+# Pliki robocze
+**/temp.py
+*.sqlite

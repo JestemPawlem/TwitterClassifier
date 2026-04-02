@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tweet Classification</title>
+        <link rel="stylesheet"
+              href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <h3>Your tweet:</h3>
+            <div>{{ content }}</div>
+
+            <h3>Prediction:</h3>
+            This tweet is <span class="{{ prediction }}">{{ prediction }}</span>.
+
+            <form class="button-container" action="/thanks" method="post">
+                <input type="submit" value="Correct" name="feedback_button">
+                <input type="submit" value="Incorrect" name="feedback_button">
+                <input type="hidden" value="{{ prediction }}" name="prediction">
+                <input type="hidden" value="{{ content }}" name="tweet">
+            </form>
+
+            <form action="/" class="button-container">
+                <input class="big-button" type="submit" value="Submit another tweet">
+            </form>
+        </div>
+    </body>
+</html>
