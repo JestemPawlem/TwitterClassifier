@@ -1,0 +1,17 @@
+# Pliki tymczasowe
+__pycache__/
+*.py[cod]
+
+# Środowisko wirtualne
+.venv/
+venv/
+ENV/
+
+# IDE, git
+.idea/
+.vscode/
+.git/
+.gitignore
+
+# Pliki tymczasowe .py
+twitter_classifier/temp.py
